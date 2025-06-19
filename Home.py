@@ -27,7 +27,6 @@ Heavy metal contamination is a serious environmental and agricultural concern. H
 - Provides high prediction accuracy (90–96%).
 - Useful in bioremediation, biosensor design, phytoremediation, and synthetic biology.
 
-HMRPred is freely accessible to the academic community at: **https://HMRPred.streamlit.app/**
 """)
 
 st.text("")
