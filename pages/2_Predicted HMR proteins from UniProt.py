@@ -31,7 +31,7 @@ Select a metal from the dropdown menu to view the corresponding predicted HMR pr
 metal = st.selectbox("Select Heavy Metal", ["Arsenic", "Cadmium", "Chromium", "Copper", "Iron", "Lead", "Mercury", "Nickle", "Silver", "Zinc"])
 
 try:
-    files = glob.glob(os.path.join("static/uniprot", f"{metal}_*.csv"))
+    files = glob.glob(os.path.join("static/uniprot/{metal}", f"{metal}_*.csv"))
 
     files = sorted(files, key=extract_index)
 
