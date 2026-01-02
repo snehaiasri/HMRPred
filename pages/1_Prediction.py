@@ -1,15 +1,8 @@
 import streamlit as st
-import itertools
-import numpy as np
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
 from Bio import SeqIO
-import io
-import pickle as pkl
 import joblib
-import base64
 from io import StringIO
-import subprocess
 from static.code import *
 import re
 
