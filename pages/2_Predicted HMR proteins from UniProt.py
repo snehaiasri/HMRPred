@@ -41,4 +41,4 @@ except Exception as e:
     st.error(e, icon="🚨")
     st.stop()
 
-st.dataframe(data=combined_df, column_config={"Probability":"Probability of HMR Prediction", "_index":""}, width='stretch')
+st.dataframe(data=combined_df, column_config={"Probability":"Probability of HMR Prediction"}, width='stretch')
