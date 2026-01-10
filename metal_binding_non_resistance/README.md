@@ -10,6 +10,8 @@ This directory contains curated validation datasets comprising metal-binding but
 | Zn | Carbonic anhydrase, Alcohol dehydrogenase | 2,429 | 694 |
 
 
+These filtered sequences were subsequently evaluated using HMRPred. Notably, 82.3% of zinc-binding proteins and 97.8% of iron-binding proteins were correctly classified as non-HMR, despite being predicted as metal-binding proteins by MeBiPred. This targeted validation demonstrates that HMRPred effectively distinguishes functional heavy metal resistance proteins from general metabolic metalloproteins, thereby providing a clear advantage over generic metal-binding predictors that do not incorporate resistance-specific functional context.
+
 The predicted non-HMR, metal-binding proteins for iron and zinc are provided as CSV files. These files report high non-HMR probabilities predicted by HMRPred alongside the corresponding metal-binding probabilities from MeBiPred, demonstrating functional specificity.
 
 
