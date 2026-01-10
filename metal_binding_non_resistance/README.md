@@ -10,6 +10,6 @@ This directory contains curated validation datasets comprising metal-binding but
 | Zn | Carbonic anhydrase, Alcohol dehydrogenase | 2,429 | 694 |
 
 
-The predicted non-HMR, metal-binding proteins (for iron and zinc) are provided as the csv files showing high non-HMR probabilities predicted by HMRPred and corresponding metal-binding probabilities from MeBiPred, illustrating functional specificity.
+The predicted non-HMR, metal-binding proteins for iron and zinc are provided as CSV files. These files report high non-HMR probabilities predicted by HMRPred alongside the corresponding metal-binding probabilities from MeBiPred, demonstrating functional specificity.
 
 
