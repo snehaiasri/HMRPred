@@ -30,15 +30,19 @@ Select a metal from the dropdown menu to view the corresponding predicted HMR pr
 
 metal = st.selectbox("Select Heavy Metal", ["Arsenic", "Cadmium", "Chromium", "Copper", "Iron", "Lead", "Mercury", "Nickle", "Silver", "Zinc"])
 
-try:
-    files = glob.glob(os.path.join(f"static/uniprot/{metal}", f"{metal}_*.csv"))
+if st.button("Submit"):
+    try:
+        files = glob.glob(os.path.join(f"static/uniprot/{metal}", f"{metal}_*.csv"))
+    
+        files = sorted(files, key=extract_index)
+    
+        dfs = [pd.read_csv(f) for f in files]
+        combined_df = pd.concat(dfs, ignore_index=True)
+    except Exception as e:
+        st.error(e, icon="🚨")
+        st.stop()
+    
+    st.dataframe(data=combined_df, column_config={"Probability":"Probability of HMR Prediction"}, width='stretch')
 
-    files = sorted(files, key=extract_index)
-
-    dfs = [pd.read_csv(f) for f in files]
-    combined_df = pd.concat(dfs, ignore_index=True)
-except Exception as e:
-    st.error(e, icon="🚨")
-    st.stop()
-
-st.dataframe(data=combined_df, column_config={"Probability":"Probability of HMR Prediction"}, width='stretch')
+st.text("")
+st.markdown("<div style='background-color:#32CD32; text-align:center'><p style='color:white'>Copyright © 2025 ICAR-Indian Agricultural Statistics Research Institute, New Delhi-110012. All rights reserved.</p></div>", unsafe_allow_html=True)
