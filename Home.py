@@ -20,7 +20,7 @@ st.markdown("""
 **HMRPred** is a machine learning-based predictive framework for the identification of heavy metal resistance (HMR) proteins across ten critical metals:
 cadmium, arsenic, chromium, copper, iron, lead, mercury, nickel, silver, and zinc.
 
-Heavy metal contamination is a serious environmental and agricultural concern. HMRPred helps in genome-wide mining and annotation of metal resistance proteins using optimized ensemble learning classifiers.
+Heavy metal contamination is a serious environmental and agricultural concern. HMRPred helps in genome-wide mining and annotation of metal resistance proteins using optimized machine learning classifiers.
 
 - Covers bacteria, archaea, and selected eukaryotes.
 - Utilizes amino acid composition, physicochemical features, and evolutionary profiles.
